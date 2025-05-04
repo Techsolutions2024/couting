@@ -1,6 +1,6 @@
 import flet as ft
 from .widgets import SidebarMenu, CameraWidget
-from ui.config import ConfigView
+from ui.config_ui import ConfigView
 
 
 
