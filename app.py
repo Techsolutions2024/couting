@@ -1,4 +1,3 @@
-# app.py
 import flet as ft
 from ui import layout
 
@@ -15,10 +14,17 @@ def main(page: ft.Page):
     page.appbar = ft.AppBar(
         title=ft.Text("🧠 Object Counter AI", size=20, weight=ft.FontWeight.BOLD),
         bgcolor=ft.colors.BLUE_600,
-        actions=[ft.IconButton(ft.icons.HELP_OUTLINE, tooltip="Trợ giúp")]
+        actions=[
+            ft.IconButton(
+                ft.icons.HELP_OUTLINE,
+                tooltip="Trợ giúp",
+                on_click=lambda e: content_area.controls.append(ft.Text("💡 Hướng dẫn sử dụng")),
+            )
+        ]
     )
 
     page.add(layout_view)
+    page.update()
 
 if __name__ == "__main__":
     ft.app(target=main)
