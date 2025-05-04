@@ -10,7 +10,7 @@ def build(page: ft.Page, content_area: ft.Column):
         if section == "camera":
             content_area.controls.append(build_camera_grid(page))
         elif section == "config":
-            content_area.controls.append(ConfigView())
+            content_area.controls.append(ConfigView(page))
 
         elif section == "report":
             content_area.controls.append(ft.Text("📊 Reports"))
