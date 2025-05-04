@@ -1,0 +1,11 @@
+{
+    "yolo_model_path": "data/best.pt",
+    "counting_classes": [
+        "person"
+    ],
+    "confidence_threshold": 0.5,
+    "roi_mode": "line",
+    "display_annotated": true,
+    "save_csv": true,
+    "display_fps": true
+}
