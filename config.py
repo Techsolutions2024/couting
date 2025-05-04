@@ -1,0 +1,11 @@
+APP_TITLE = "TechSolutions Object Counter"
+DEFAULT_MODEL_PATH = "models/best.pt"
+DEFAULT_OUTPUT_DIR = "output"
+CSV_COLUMNS = ["timestamp", "camera_id", "class_name", "count"]
+SUPPORTED_CLASSES = ["person", "car", "motorbike", "truck", "bicycle"]
+SUPPORTED_FORMATS = ["mp4", "avi", "mov"]
+SUPPORTED_RESOLUTIONS = ["720p", "1080p", "4k"]
+SUPPORTED_CODECS = ["h264", "h265", "mpeg4"]
+SUPPORTED_FRAME_RATES = [24, 30, 60, 120]
+SUPPORTED_BITRATES = ["low", "medium", "high"]
+SUPPORTED_OUTPUT_FORMATS = ["mp4", "avi", "mov"]
