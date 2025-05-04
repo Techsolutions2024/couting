@@ -1,13 +1,24 @@
+# app.py
 import flet as ft
-from ui.layout import MainLayout
-from config import APP_TITLE
+from ui import layout
 
 def main(page: ft.Page):
-    page.title = APP_TITLE
+    page.title = "Object Counter AI"
+    page.window_width = 1200
+    page.window_height = 800
     page.theme_mode = ft.ThemeMode.LIGHT
-    page.window_maximized = True
-    layout = MainLayout(page)
-    page.add(layout.build())
+    page.scroll = ft.ScrollMode.AUTO
+
+    content_area = ft.Column(expand=True)
+    layout_view = layout.build(page, content_area)
+
+    page.appbar = ft.AppBar(
+        title=ft.Text("🧠 Object Counter AI", size=20, weight=ft.FontWeight.BOLD),
+        bgcolor=ft.colors.BLUE_600,
+        actions=[ft.IconButton(ft.icons.HELP_OUTLINE, tooltip="Trợ giúp")]
+    )
+
+    page.add(layout_view)
 
 if __name__ == "__main__":
     ft.app(target=main)
