@@ -87,9 +87,13 @@ def ConfigView(page: ft.Page):
         value=config.get("confidence_threshold", 0.5),
         label="{value:.1f}",
         width=400,
-        on_change=lambda e: confidence_slider.label.set(f"{e.control.value:.1f}"),
+        on_change=lambda e: update_confidence_label(e),
         tooltip="Ngưỡng tin cậy cho việc phát hiện đối tượng",
     )
+
+    def update_confidence_label(e):
+        confidence_slider.label = f"{e.control.value:.1f}"
+        confidence_slider.update()
 
     # Camera configuration
     camera_controls = ft.Column(spacing=10)
