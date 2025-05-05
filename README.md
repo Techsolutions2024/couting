@@ -1,7 +1,5 @@
-Dưới đây là một tệp `README.md` mẫu cho repository của bạn, **Techsolutions2024/couting**. Bạn có thể chỉnh sửa để phù hợp với mục tiêu cụ thể của dự án.
 
-```markdown
-# Counting System
+## Counting System
 
 ## Giới thiệu
 **Counting System** là một dự án được xây dựng bằng Python, nhằm cung cấp các công cụ hoặc giải pháp liên quan đến việc đếm (counting). Dự án có thể được sử dụng trong nhiều trường hợp như xử lý dữ liệu, phân tích, hoặc các ứng dụng tự động hóa.
